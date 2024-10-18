@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Obliczanie wyniku równania x = a/b</h2>
+        <div class="input-box">
+            <label for="a1">Liczba A</label>
+            <input value="0" type="number" id="a1" placeholder="Wpisz liczbę A">
+        </div>
+        <div class="input-box">
+            <label for="b1">Liczba B</label>
+            <input value="0" type="number" id="b1" placeholder="Wpisz liczbę B">
+        </div>
+        <p id="error1" class="error">Nie mogę dzielić przez zero!</p>
+        <h2 id="AB">0</h2>
+        <button id="calculateAB">Oblicz</button>
+        <h2>Obliczanie wyniku równania x = a/b + c/d</h2>
+        <div class="input-box">
+            <label for="a2">Liczba A</label>
+            <input value="0" type="number" id="a2" placeholder="Wpisz liczbę A">
+        </div>
+        <div class="input-box">
+            <label for="b2">Liczba B</label>
+            <input value="0" type="number" id="b2" placeholder="Wpisz liczbę B">
+        </div>
+        <div class="input-box">
+            <label for="c2">Liczba C</label>
+            <input value="0" type="number" id="c2" placeholder="Wpisz liczbę C">
+        </div>
+        <div class="input-box">
+            <label for="d2">Liczba D</label>
+            <input value="0" type="number" id="d2" placeholder="Wpisz liczbę D">
+        </div>
+        <p id="error2" class="error">Nie mogę dzielić przez zero! Zmień wartość liczby <span id="letter"></span>!</p>
+        <h2 id="ABCD">0</h2>
+        <button id="calculateABCD">Oblicz</button>
+
+<br>
+<br>
+        <div class="calculator">
+            <h2>x = (a+6) / (b – 4).</h2>
+            <div class="input-box">
+                <label for="a">Liczba A</label>
+                <input value="0" type="number" id="a" placeholder="Wpisz liczbę A">
+            </div>
+            <div class="input-box">
+                <h1 >+</h1>
+                <h2 id="six" value="6">6</h2>
+            </div>
+            <h1 for="b">/</h1>
+            <div class="input-box">
+                <label for="b">Liczba B</label>
+                <input value="0" type="number" id="b" placeholder="Wpisz liczbę B">
+            </div>
+            <h1 for="b6">-</h1>
+            <div class="input-box">
+                <h2 id="four" value="4">4</h2>
+            </div>
+            <p id="error" class="error">Nie mogę odejmowac od <span id="letter">4</span>!</p>
+            <h1 id="ab64">0</h1>
+
+            <button id="calculate64">Oblicz</button>
+<br>
+<br>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
